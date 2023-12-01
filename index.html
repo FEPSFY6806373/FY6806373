@@ -171,14 +171,14 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
       var currentSlide = 0;
 
 
-      fuction showSlide() {
+      function showSlide() {
         document.getElementById('slide').src = slideImages[currentSlide];
       }
       function nextSlide() {
         currentSlide = (currentSlide + 1) % slideImages.length;
         showSlide();
       }
-      fuction prevSlide() {
+      function prevSlide() {
         currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
         showSlide();
       }
