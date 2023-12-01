@@ -187,8 +187,6 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
         currentSlide = slideNumber - 1;
         showSlide();
       }
-      // Call showSlide() to display the first slide
-      showSlide();
     </script>
     
     <div id="slide-container">
@@ -203,7 +201,10 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
        <button class="button" onclick="showSlideNumber(1)">1</button>
        <button class="button" onclick="showSlideNumber(2)">2</button>
     </div>
-   </script>
+    <script>
+      // Call showSlide() to display the first slide
+      showSlide();
+    </script>
     <style>
       /* Style to center the image */
       #slide-container {
