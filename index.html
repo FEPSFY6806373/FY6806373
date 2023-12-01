@@ -154,42 +154,6 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
     
 
         
-   
-<p id="date&time"></p>
-      
-      <script>
-        
-        //Javascript to display the date and time on my webpage
-
-       const d= new Date();
-        document.getElementById("date&time").innerHTML = d;
-        
-      </script>
-      
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <title>Change Button Color</title>
-        </head>
-        <body>
-          <button id="colorButton">Click me to change color</button>
-
-          <script>
-            // Get a reference to the button element
-            var button = document.getElementById("colorButton");
-            // Function to change the button color
-            function changeColor() {
-              // Generate a random color (hexadecimal)
-              var randomColor= "#" + Math.floor(Math.random()*16777215).toString(16);
-
-              // Set the button's background color to the random color
-              button.style.backgroundColor = randomColor;
-            }
-
-            // Add a click event listener to the button
-            button.addEventListener("click", changeColor);
-          </script>
-        </body>
 
  <script> type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
       <script type="text/javascript">
@@ -197,9 +161,13 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
         goggle.charts.setOnLoadCallback(drawChart)
       </script>
       <div id="chart_div"></div>
+
+
+
+    
     <script>
       // Array of slide image URLs
-      var slideImages = ["slide 1.jpg", "slide2.jpg"];
+      var slideImages = ["slide1.jpg", "slide2.jpg"];
       var currentSlide = 0;
       function showSlide() {
         currentSlide = (currentSlide + 1) % slideImages.length;
@@ -219,7 +187,7 @@ Berlinger, J. et al. (2023) The Iron Dome, explained and visualized, CNN. Availa
     </script>
     
     <div id="slide-container">
-      <img id="slide" src="slide 1.jpg" alt=" Slide 1" style="width:100%; max-width:800px;">
+      <img id="slide" src="slide1.jpg" alt=" Slide 1" style="width:100%; max-width:800px;">
       <!-- Previous and Next buttons container -->
       <div class="button-container">
        <button class="button" onclick="prevSlide()">Previous</button>
