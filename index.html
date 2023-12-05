@@ -200,12 +200,12 @@ the program worldwide leading to less casualties and improving the safety of the
     
     <script>
       // Array of slide image URLs
-      var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg","slide4.jpg","slide5.jpg"];
+      var slideImages = ["screen1.png", "screen2.png", "screen3.png","screen4.png","screen5.png"];
       var currentSlide = 0;
 
 
       function showSlide() {
-        document.getElementById('slide').src = slideImages[currentSlide];
+        document.getElementById('screen').src = slideImages[currentSlide];
       }
       function nextSlide() {
         currentSlide = (currentSlide + 1) % slideImages.length;
@@ -223,7 +223,7 @@ the program worldwide leading to less casualties and improving the safety of the
     </script>
     
     <div id="slide-container">
-      <img id="slide" src="slide1.jpg" alt=" Slide 1" style="width:100%; max-width:1400px;">
+      <img id="screen" src="screen1.png" alt=" Slide 1" style="width:100%; max-width:1400px;">
       
       <!-- Previous and Next buttons container -->
      <div class="button-container">
